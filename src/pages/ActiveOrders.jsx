@@ -1,7 +1,16 @@
 import React from "react";
+import Header from "../components/Header";
+import Aside from "../components/Aside";
 
 function ActiveOrders() {
-  return <div>ActiveOrders</div>;
+  return (
+    <>
+      <Header />
+      <body>
+        <Aside />
+      </body>
+    </>
+  );
 }
 
 export default ActiveOrders;

@@ -1,7 +1,17 @@
 import React from "react";
+import Header from "../components/Header";
+import Aside from "../components/Aside";
 
 function CompletedOrders() {
-  return <div>CompletedOrders</div>;
+  return (
+    <>
+      <Header />
+
+      <body>
+        <Aside />
+      </body>
+    </>
+  );
 }
 
 export default CompletedOrders;
