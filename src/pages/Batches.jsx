@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
 
 function Batches() {
-  return <div>Batches</div>;
+  return (
+    <>
+      <Header />
+      <div>Batches here</div>
+    </>
+  );
 }
 
 export default Batches;

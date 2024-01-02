@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
 
 function Dashboard() {
-  return <div>Dashboard</div>;
+  return (
+    <>
+      <Header />
+      <body>body here</body>
+    </>
+  );
 }
 
 export default Dashboard;

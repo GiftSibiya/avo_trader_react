@@ -23,6 +23,7 @@ function App() {
             <Route path="/activeOrders" element={<ActiveOrders />} />
             <Route path="/dashboard" element={<Batches />} />
             <Route path="/customers" element={<Customers />} />
+            <Route path="/batches" element={<Batches />} />
             <Route path="/completedOrders" element={<CompletedOrders />} />
           </Route>
         </Routes>

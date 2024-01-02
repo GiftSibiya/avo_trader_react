@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
 
 function ActiveOrders() {
-  return <div>ActiveOrders</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default ActiveOrders;

@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "../components/Header";
 
 function CompletedOrders() {
-  return <div>CompletedOrders</div>;
+  return (
+    <>
+      <Header />
+
+      <div>CompletedOrders</div>
+    </>
+  );
 }
 
 export default CompletedOrders;
