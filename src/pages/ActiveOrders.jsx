@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Header from "../components/Header";
 import Aside from "../components/Aside";
 import DataTable from "react-data-table-component";
 import { Link } from "react-router-dom";
 
 function ActiveOrders() {
+  const [orders, setOrders] = useState([]);
   const columns = [
     {
       name: "Order",
@@ -39,6 +41,19 @@ function ActiveOrders() {
       selector: (row) => row.method,
     },
   ];
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const response = await axios.get("http://localhost:4000/orders");
+        setOrders(response.data);
+      } catch (error) {
+        console.error("Error fetching orders:", error);
+      }
+    };
+
+    fetchOrders();
+  }, []);
+
   const dataB = [
     {
       id: 3,
@@ -79,7 +94,9 @@ function ActiveOrders() {
             </button>
           </Link>
 
-          <div className=" w-[85vw] border-2"></div>
+          <div className=" w-[85vw] border-2">
+            <DataTable columns={columns} data={orders} />
+          </div>
         </section>
       </body>
     </>
