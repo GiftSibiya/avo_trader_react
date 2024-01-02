@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="flex items-center justify-between w-full h-16 bg-emerald-600">
+    <div className="flex items-center justify-between w-[85vw] h-16 bg-emerald-600">
       <span> AvoTrader</span>
       <nav className="flex justify-around w-[60vw]">
         <Link

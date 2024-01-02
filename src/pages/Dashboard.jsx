@@ -5,7 +5,7 @@ import Aside from "../components/Aside";
 function Dashboard() {
   return (
     <>
-      <body className="flex">
+      <body className="flex w-screen">
         <Aside />
         <section className="flex flex-col">
           <Header />
