@@ -11,6 +11,7 @@ import ActiveOrders from "./pages/ActiveOrders";
 import Batches from "./pages/Batches";
 import Customers from "./pages/Customers";
 import CompletedOrders from "./pages/CompletedOrders";
+import CreateOrder from "./pages/CreateOrder";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/dashboard" element={<Batches />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/batches" element={<Batches />} />
+            <Route path="/create" element={<CreateOrder />} />
             <Route path="/completedOrders" element={<CompletedOrders />} />
           </Route>
         </Routes>

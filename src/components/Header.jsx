@@ -20,15 +20,15 @@ function Header() {
         </Link>
         <Link
           className="text-white font-medium hover:bg-orange-300 p-1 rounded-2xl"
-          to={"/customers"}
-        >
-          Customers
-        </Link>
-        <Link
-          className="text-white font-medium hover:bg-orange-300 p-1 rounded-2xl"
           to={"/completedOrders"}
         >
           Completed Orders
+        </Link>
+        <Link
+          className="text-white font-medium hover:bg-orange-300 p-1 rounded-2xl"
+          to={"/customers"}
+        >
+          Customers
         </Link>
         <Link
           className="text-white font-medium hover:bg-orange-300 p-1 rounded-2xl"
