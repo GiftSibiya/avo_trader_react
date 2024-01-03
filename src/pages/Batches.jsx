@@ -5,7 +5,7 @@ import Aside from "../components/Aside";
 function Batches() {
   return (
     <>
-      <Header />
+      <Header classname="border-2" />
       <body>
         <Aside />
       </body>
